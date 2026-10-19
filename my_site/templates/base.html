@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- This marks what children can replace the title with, see index_with_base.html for more info -->
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<nav>
+		<a href="/contact">CONTACT</a>
+		<a href="/about">ABOUT</a>
+		<a href="/other">OTHER</a>
+	</nav>
+
+	<!-- This marks what children html templates can inject their own styling -->
+	<div>{% block content %}{% endblock %}</div>
+</body>
+</html>

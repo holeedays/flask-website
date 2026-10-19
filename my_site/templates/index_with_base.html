@@ -1,0 +1,10 @@
+<!-- load the base.html (just a full document with a nav bar) -->
+{% extends "base.html" %}
+<!-- replace the title of the base.html witht this -->
+{% block title %}INDEX PAGE{% endblock %}
+<!-- add our own content in the given block of the base.html we can modify -->
+{% block content %}
+<h1>Hello There</h1>
+<script type="module" src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}
+
